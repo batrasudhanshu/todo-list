@@ -41,7 +41,7 @@ const Card = ({ taskObj, index, deleteTask, updateListArray }) => {
   };
 
   return (
-    <NavLink to={`/taskdetails/:${taskObj.id}`}>
+    <NavLink to={`/taskdetails/${taskObj.id}`} taskObj={taskObj.Name}>
       {console.log("taskObj", taskObj.id)}
       <div class="card-wrapper mr-5">
         <div
